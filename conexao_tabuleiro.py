@@ -3,7 +3,7 @@ import ctypes
 BUF_SIZE = 2048
 
 # .so para linux .dll para windows
-# lib = ctypes.CDLL("./libtabuleiro.so")
+lib = ctypes.CDLL("./libtabuleiro.so")
 # lib = ctypes.CDLL("./tabuleiro.dll")
 
 lib.tabuleiro_conecta.argtypes = (ctypes.c_int, ctypes.POINTER(ctypes.c_char_p))
